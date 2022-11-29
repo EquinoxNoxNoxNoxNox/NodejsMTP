@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@mtproto/core": "6.2.0",
+    "express": "^4.17.3",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}
