@@ -76,7 +76,7 @@ async function InvokePhonenumber(pn){
   return result;
 }
 
-app.post('/', async (req, res) => {
+app.post('/check', async (req, res) => {
   const Phonenumber = req.headers.phone.startsWith('+') ? req.headers.phone : "+" + req.headers.phone;
   let result = await InvokePhonenumber(Phonenumber);
   res.send(result);
